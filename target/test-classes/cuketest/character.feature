@@ -1,7 +1,19 @@
 Feature: Character
   Optional description of the feature
 
-  Scenario: a few cukes
-    Given I have 42 cukes in my belly
-    When I wait 1 hour
-    Then my belly should growl
+  Scenario: This character is Mario
+    Given I have a character
+    When The character has a mustache
+    And The character has a red hat
+    Then The character is Mario
+
+  Scenario: This character is Luigi
+    Given I have a character
+    When The character has a mustache
+    And The character has a green hat
+    Then The character is Luigi
+
+  Scenario: This character is Peach
+    Given I have a character
+    When The character does not have a mustache
+    Then The character is Peach
